@@ -54,13 +54,13 @@ function busquedaBinaria(list, numero) {
 }
 
 let buscar12 = 12; 
-console.log(busquedaBinaria(list, buscar12));
+console.log('La posición del número 12 es ' + busquedaBinaria(list, buscar12));
 
 let buscar5 = 5; 
-console.log(busquedaBinaria(list, buscar5));
+console.log('La posición del número 5 es ' + busquedaBinaria(list, buscar5));
 
 let buscar22 = 22; 
-console.log(busquedaBinaria(list, buscar22));
+console.log('La posición del número 22 es ' + busquedaBinaria(list, buscar22));
 
 let buscar100 = 100; 
-console.log(busquedaBinaria(list, buscar100));
+console.log('La posición del número 100 es ' + busquedaBinaria(list, buscar100));
