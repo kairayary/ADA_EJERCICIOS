@@ -2,7 +2,7 @@ const net = require('net');
 const readline = require('readline-sync');
 
 const options = {
-    port: 5000,
+    port: 6000,
     host:'127.0.0.1'
 };
 
@@ -48,3 +48,4 @@ function sendMessage() {
     
     client.write(message);
 }
+
