@@ -2,7 +2,7 @@ const net = require('net');
 const readline = require('readline-sync');
 
 const client = net.createConnection({port:5000, host: 'localhost'}, ()=>{
-    console.log('Conectado al Srvidor!!!');
+    console.log('Conectado al Servidor!!!');
     client.write('Hola, servidor!');
 });
 

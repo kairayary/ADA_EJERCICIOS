@@ -1,27 +1,24 @@
 const net = require('net');
 
 const server = net.createServer((socket) => {
-    console.log('El cliente se ha Conectado');
-   
-   
+    console.log('Cliente conectado');
+
     socket.on('data', (data) => {
-        
-        console.log('\nEl cliente ' + socket.remoteAddress + ':' + socket.remotePort + ' dice:' + data);
-        
-        socket.write('Hola Cliente!!!\n');
+        console.log('Mensaje recibido del cliente: ' + data.toString());
+        // Responder con el mismo mensaje recibido
+        socket.write(data);
     });
 
-    socket.on('end', ()=>{
-        console.log('El cliente se ha desconectado!!!');
-        
+    
+    socket.on('end', () => {
+        console.log('Cliente desconectado');
     });
 
+    
     socket.on('error', (err) => {
-        console.log(err.message);
-
+        console.error(`Error: ${err.message}`);
     });
 });
-
 server.listen(5000, () => {
     console.log('Servidor TCP escuchando en el puerto 5000');
 
