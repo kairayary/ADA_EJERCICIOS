@@ -2,7 +2,9 @@ const net = require('net');
 
 const server = net.createServer((socket) => {
     console.log('Cliente conectado');
-
+    
+    socket.write('Bienvenidos al servidorTPC. Envia "status"para verificar estado.')
+   
     // Manejo de datos recibidos del cliente
     socket.on('data', (data) => {
         const mensaje = data.toString().trim();
@@ -20,6 +22,7 @@ const server = net.createServer((socket) => {
         console.log('Cliente desconectado');
     });
 
+    sendMessageFromServer(socket);
     
     socket.on('error', (err) => {
         console.error('Error:', err.message);
@@ -30,3 +33,5 @@ const server = net.createServer((socket) => {
 server.listen(10000, () => {
     console.log('Servidor escuchando en el puerto 10000');
 });
+
+

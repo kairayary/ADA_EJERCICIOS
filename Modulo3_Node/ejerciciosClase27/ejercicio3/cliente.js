@@ -24,7 +24,7 @@ client.on('error', (err) => {
 
 // Función para enviar mensajes al servidor
 function sendMessage() {
-    const mensaje = readline.question('Escribe tu mensaje para enviar al servidor ("status" para saber el estado de la conexión ó "salir" para terminar): ');
+    const mensaje = readline.question('Escribe tu mensaje para enviar al servidor ( "salir" para terminar): ');
 
     if (mensaje.trim() === '') {
         console.log('No se puede enviar un mensaje vacío.');
