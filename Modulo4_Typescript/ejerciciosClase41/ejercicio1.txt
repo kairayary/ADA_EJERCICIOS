@@ -1,0 +1,19 @@
+Escribe un breve ensayo (1-2 párrafos) que explique qué es la
+Programación Orientada a Objetos y sus principales beneficios en
+comparación con la programación estructurada. Guardalo en un
+README.md en la carpeta de la clase
+2. Menciona al menos tres lenguajes de programación que soporten POO.
+
+
+
+La Programación Orientada a Objetos (POO) es un paradigma de programación que se 
+centra en la creación de objetos y clases para resolver problemas. Cada objeto representa una entidad con propiedades y comportamientos definidos, 
+lo que facilita la modelización de problemas del mundo real.
+Los principales beneficios de la POO en comparación con la programación estructurada son:
+Reutilización de código, Encapsulación, Herencia, Polimorfismo.
+Algunos lenguajes de programación que soportan POO son:
+Java
+C+
+Python
+C#
+JavaScript (con clases y objetos)
